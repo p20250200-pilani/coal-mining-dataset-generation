@@ -1,0 +1,61 @@
+{
+    "pairwise": [
+        {
+            "source": "PM10",
+            "target": "PM2.5",
+            "mode": "ratio",
+            "ratio": 0.65,
+            "blend": 0.7
+        },
+        {
+            "source": "PM2.5",
+            "target": "CO",
+            "coeff": 0.25
+        },
+        {
+            "source": "PM2.5",
+            "target": "SO2",
+            "coeff": 0.18
+        },
+        {
+            "source": "PM2.5",
+            "target": "NO2",
+            "coeff": 0.2
+        },
+        {
+            "source": "PM2.5",
+            "target": "NO",
+            "coeff": 0.18
+        },
+        {
+            "source": "NO",
+            "target": "NO2",
+            "coeff": 0.85
+        }
+    ],
+    "humidity_effect": {
+        "threshold": 72.0,
+        "strength": 0.12,
+        "targets": [
+            "PM2.5",
+            "PM10",
+            "CO",
+            "SO2",
+            "NO",
+            "NO2"
+        ]
+    },
+    "temperature_effect": {
+        "baseline": 28.0,
+        "strength": -0.08,
+        "targets": [
+            "PM2.5",
+            "PM10",
+            "CO",
+            "SO2",
+            "NO",
+            "NO2"
+        ]
+    }
+}
+

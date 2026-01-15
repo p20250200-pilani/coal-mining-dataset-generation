@@ -1,0 +1,62 @@
+{
+    "CH4": {
+        "safe": [0, 1.25],
+        "unsafe": [1.25, 5],
+        "unit": "%vol"
+    },
+    "CO": {
+        "safe": [0, 50],
+        "unsafe": [50, 200],
+        "unit": "ppm"
+    },
+    "CO2": {
+        "safe": [0, 5000],
+        "unsafe": [5000, 20000],
+        "unit": "ppm"
+    },
+    "H2S": {
+        "safe": [0, 10],
+        "unsafe": [10, 100],
+        "unit": "ppm"
+    },
+    "SO2": {
+        "safe": [0, 2],
+        "unsafe": [2, 20],
+        "unit": "ppm"
+    },
+    "NH3": {
+        "safe": [0, 25],
+        "unsafe": [25, 100],
+        "unit": "ppm"
+    },
+    "NO": {
+        "safe": [0, 25],
+        "unsafe": [25, 100],
+        "unit": "ppm"
+    },
+    "NO2": {
+        "safe": [0, 3],
+        "unsafe": [3, 20],
+        "unit": "ppm"
+    },
+    "PM2.5": {
+        "safe": [0, 60],
+        "unsafe": [60, 500],
+        "unit": "µg/m³"
+    },
+    "PM10": {
+        "safe": [0, 100],
+        "unsafe": [100, 1000],
+        "unit": "µg/m³"
+    },
+    "Temperature": {
+        "safe": [20, 33.5],
+        "unsafe": [33.5, 50],
+        "unit": "°C"
+    },
+    "Humidity": {
+        "safe": [30, 80],
+        "unsafe": [80, 100],
+        "unit": "%RH"
+    }
+}

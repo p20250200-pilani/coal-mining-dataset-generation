@@ -1,0 +1,45 @@
+{
+    "normal": {
+        "tick_minutes": 1.0,
+        "diurnal": {
+            "period_minutes": 1440,
+            "temperature_amplitude": 2.5,
+            "humidity_amplitude": 8.0,
+            "humidity_phase_deg": 75
+        }
+    },
+    "ventilation_failure": {
+        "inherits": "normal",
+        "gas_rise_pct_per_hour": 0.01,
+        "temperature_rise_per_hour": 0.15,
+        "humidity_rise_per_hour": -0.04
+    },
+    "methane_leak": {
+        "inherits": "normal",
+        "ch4_spike_value": 3.0,
+        "ch4_rise_minutes": 20,
+        "secondary_gas_gain": 0.08,
+        "pm_gain": 0.25
+    },
+    "combustion": {
+        "inherits": "normal",
+        "co_spike_value": 150.0,
+        "co_rise_minutes": 8,
+        "co2_spike_value": 2500.0,
+        "pm_gain_per_co": 0.6,
+        "temperature_rise_per_hour": 0.4,
+        "humidity_drop_per_hour": 0.8,
+        "nox_gain": 0.45
+    },
+    "dust_event": {
+        "inherits": "normal",
+        "pm_peak": 450.0,
+        "pm_event_duration_minutes": 12,
+        "pm_event_period_minutes": 120,
+        "co_spike": 30.0,
+        "nox_spike": 15.0,
+        "humidity_drop_during_event": 6.0,
+        "temperature_bump_during_event": 0.8
+    }
+}
+
